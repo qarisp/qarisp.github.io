@@ -316,12 +316,47 @@
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
         <div class="row">
+
+          <!-- DBT Project -->
+          <div class="col s12 m6 l6">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="dbt project" src="/assets/img/dbt-project.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">The Look eCommerce Data Modelling<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A data modelling project utilizing Amazon S3 to store raw data, Snowflake as a data warehouse, and dbt for data modelling
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Amazon S3, Snowflake, dbt</li>
+                  <li>Stores raw datasets in Amazon S3.</li>
+                  <li>Snowflake acts as the cloud data warehouse.</li>
+                  <li>dbt used for stages and cleans raw data from Snowflake.</li>
+                  <li>The final data model is designed in a star schema for efficient analytics.</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit the GitHub repo for this project" href="https://github.com/qarisp/thelook-data-modelling-project"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
           
           <!-- Kafka Project -->
           <div class="col s12 m6 l6">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="/assets/img/kafka-project-logo.png" style="height: 100%; width: 100%" class="activator" />
+                <img alt="kafka project" src="/assets/img/kafka-project-logo.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
                 <span class="card-title activator teal-text hoverline">Indonesia Weather & Earthquake Map<i
@@ -343,11 +378,11 @@
                   <li>The data is visualized with Streamlit, fetching real-time updates from DynamoDB.</li>
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit " href="https://weather-earthquake-kafka-portfolio.streamlit.app/" target="_blank" data-position="top"
+                  <a aria-label="Visit this app" href="https://weather-earthquake-kafka-portfolio.streamlit.app/" target="_blank" data-position="top"
                     data-tooltip="View Online"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/qarisp/weather-earthquake-kafka-project"
+                  <a aria-label="Visit the GitHub repo for this project" href="https://github.com/qarisp/weather-earthquake-kafka-project"
                     target="_blank" data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
@@ -360,7 +395,7 @@
           <div class="col s12 m6 l6">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="/assets/img/rain-in-australia.jpg" style="height: 100%; width: 100%" class="activator" />
+                <img alt="rain in australia project" src="/assets/img/rain-in-australia.jpg" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
                 <span class="card-title activator teal-text hoverline">Rain in Australia Prediction<i
@@ -381,11 +416,11 @@
                   <li><b>Recall score:</b> 0.87</li>
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit " href="https://rain-prediction-portfolio.streamlit.app/" target="_blank" data-position="top"
+                  <a aria-label="Visit this app" href="https://rain-prediction-portfolio.streamlit.app/" target="_blank" data-position="top"
                     data-tooltip="View Online"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/qarisp/rain_prediction"
+                  <a aria-label="Visit the GitHub repo for this project" href="https://github.com/qarisp/rain_prediction"
                     target="_blank" data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
@@ -398,13 +433,13 @@
           <div class="col s12 m8 l6">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="/assets/img/the-look-ecommerce.png" style="height: 100%; width: 100%" class="activator" />
+                <img alt="the look analysis project" src="/assets/img/the-look-ecommerce.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">The Look Analysis<i
+                <span class="card-title activator teal-text hoverline">The Look eCommerce Analysis<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  Utilized BigQuery to analyze The Look E-commerce data
+                  Utilized BigQuery to analyze The Look eCommerce data
                 </p>
               </div>
               <div class="card-reveal">
@@ -419,7 +454,7 @@
 
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit " href="https://drive.google.com/file/d/1vCo4HT5XuLwyFAw_FjFi_k790wHFjfwQ/view" target="_blank" data-position="top"
+                  <a aria-label="Visit this dashboard" href="https://drive.google.com/file/d/1vCo4HT5XuLwyFAw_FjFi_k790wHFjfwQ/view" target="_blank" data-position="top"
                     data-tooltip="View Online"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-external-link"></i></a>
@@ -432,14 +467,14 @@
           <div class="col s12 m6 l6">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="/assets/img/the-look-dashboard.png"
+                <img alt="the look dashboard" src="/assets/img/the-look-dashboard.png"
                 style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">The Look Dashboard<i
+                <span class="card-title activator teal-text hoverline">The Look eCommerce Dashboard<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  Dashboard for The Look E-commerce using Tableau
+                  Dashboard for The Look eCommerce using Tableau
                 </p>
               </div>
               <div class="card-reveal">
