@@ -1,9 +1,9 @@
-<!-- <!DOCTYPE html> -->
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Google Tag Manager -->
@@ -14,13 +14,29 @@
   })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
   <!-- End Google Tag Manager -->
 
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="/assets/css/style.css" />
   <title>Qaris Pratama | Data Engineer</title>
+  <meta name="description" content="Portfolio of Qaris Pratama, Data Engineer" />
+
+  <!-- Theme bootstrap (prevents flash of the wrong theme) -->
+  <script>
+    (function () {
+      var saved = localStorage.getItem("theme");
+      var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="/assets/css/main.css" />
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
@@ -50,677 +66,485 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
   height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </noscript>
-  
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
 
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/linkedin-profile.jpeg" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
-      </li>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Go to top">
+        <span class="brand-mark">QP</span>
+        <span class="brand-name">Qaris<span class="brand-dot">.</span></span>
+      </a>
 
-      <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
+      <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#courses">Courses</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-cta">
+            <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/1tnnmnTBeWvgCJB79UE7ssqJMI92OO5tC/view?usp=sharing" target="_blank" rel="noopener">
+              <i class="fa-solid fa-file-arrow-down"></i> Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-      
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Courses section" href="#courses" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Courses</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <a aria-label="Open Qaris' resume in a new tab" href="https://drive.google.com/file/d/1tnnmnTBeWvgCJB79UE7ssqJMI92OO5tC/view?usp=sharing" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Qaris
-        Pratama</a><span class="black-text">Data Engineer</span>
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="icon-button nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
     </div>
-  </nav>
+  </header>
 
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
+  <main id="main">
 
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Courses section" href="#courses" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Courses</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Qaris' Resume in a new tab"
-          href="https://drive.google.com/file/d/1tnnmnTBeWvgCJB79UE7ssqJMI92OO5tC/view?usp=sharing" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">Qaris Pratama.</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5 style="text-align: justify;">Self-driven and quick to learn, I’m a passionate data engineer with a curious mindset, focused on solving complex, real-world problems by building scalable data pipelines and efficient data infrastructure.</h5>
-            </div>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/qaris-pratama-640960207/" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/qarisp" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-eyebrow"><span class="pulse-dot"></span> Data Engineer · Bali, Indonesia</p>
+          <h1 class="hero-title">Hi, I'm <span class="gradient-text">Qaris Pratama.</span></h1>
+          <p class="hero-typed">A <span class="typing"></span></p>
+          <p class="hero-desc">
+            Self-driven and quick to learn, I'm a passionate data engineer with a curious mindset, focused on solving complex, real-world problems by building scalable data pipelines and efficient data infrastructure.
+          </p>
+          <div class="hero-actions">
+            <a href="#about" class="btn btn-primary">Read More <i class="fa-solid fa-arrow-down"></i></a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+          <div class="hero-social">
+            <a aria-label="Visit Qaris' LinkedIn profile" href="https://www.linkedin.com/in/qaris-pratama-640960207/" target="_blank" rel="noopener" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a aria-label="Visit Qaris' GitHub profile" href="https://github.com/qarisp" target="_blank" rel="noopener" class="social-link"><i class="fa-brands fa-github"></i></a>
+            <a aria-label="Email Qaris" href="mailto:qarisp@gmail.com" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="avatar-wrap">
+            <div class="avatar-ring"></div>
+            <img src="/assets/img/linkedin-profile.jpeg" alt="Portrait of Qaris Pratama" class="avatar-img" />
+            <span class="float-chip chip-a"><i class="fa-solid fa-database"></i> Data Engineer</span>
+            <span class="float-chip chip-b"><i class="fa-solid fa-wind"></i> Airflow · dbt</span>
           </div>
         </div>
       </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll down to About section"><i class="fa-solid fa-chevron-down"></i></a>
     </section>
 
     <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <!-- <blockquote>
-          <h2>
-            A Software Developer with a passion for Backend Development and Artificial Intelligence.
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">01 · About</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
 
-          </h2>
-        </blockquote> -->        
-        <p style="text-align: justify;">
-          I'm a Computer Science Graduate from Udayana University. I enjoy solving problems with code. Always strive to bring 100% to the work I do.
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I'm a Computer Science Graduate from Udayana University. I enjoy solving problems with code. Always strive to bring 100% to the work I do.
+            </p>
+            <p>
+              I have worked on technologies like Python, Django, Flask, MySQL, PostgreSQL, Jupyter Notebook, scikit-learn, and TensorFlow during my bachelor's. I have over 1 year of professional work experience which helped me strengthen my experience in Python, SQL, building pipeline, and automating task.
+            </p>
+            <p>
+              I am passionate about building scalable data pipelines and efficient data infrastructure, and I'm seeking an opportunity to grow into a Data Engineer, where I can build scalable and reliable data infrastructure.
+            </p>
 
-          I have worked on technologies like Python, Django, Flask, MySQL, PostgreSQL, Jupyter Notebook, scikit-learn, and TensorFlow during my bachelor's. I have over 1 year of professional work experience which helped me strengthen my experience in Python, SQL, building pipeline, and automating task.
+            <ul class="check-list">
+              <li><i class="fa-solid fa-circle-check"></i><span><b>Programming &amp; Scripting:</b> Python, Shell Scripting, SQL, and NoSQL</span></li>
+              <li><i class="fa-solid fa-circle-check"></i><span><b>Data Tools:</b> Apache Airflow, Apache Spark, Apache Kafka, dbt, Docker, and Kubernetes</span></li>
+              <li><i class="fa-solid fa-circle-check"></i><span><b>API Technologies:</b> GraphQL and REST</span></li>
+              <li><i class="fa-solid fa-circle-check"></i><span><b>Data Visualization:</b> Tableau</span></li>
+              <li><i class="fa-solid fa-circle-check"></i><span><b>Databases:</b> Postgres, MySQL, BigQuery, and Snowflake</span></li>
+              <li><i class="fa-solid fa-circle-check"></i><span><b>Web Scraping:</b> BeautifulSoup and Selenium</span></li>
+              <li><i class="fa-solid fa-circle-check"></i><span><b>Machine Learning:</b> scikit-learn and TensorFlow</span></li>
+              <li><i class="fa-solid fa-circle-check"></i><span><b>Version Control:</b> Git and GitHub</span></li>
+              <li><i class="fa-solid fa-circle-check"></i><span><b>Cloud Services:</b> AWS and GCP</span></li>
+            </ul>
+          </div>
 
-          I am passionate about building scalable data pipelines and efficient data infrastructure.
-        </p>
-        <p>
-          <ul>
-            <li><b>Programming & Scripting:</b> Python, Shell Scripting, SQL, and NoSQL</li>
-            <li><b>Data Tools:</b> Apache Airflow, Apache Spark, Apache Kafka, dbt, Docker, and Kubernetes</li>
-            <li><b>API Technologies:</b> GraphQL and REST</li>
-            <li><b>Data Visualization:</b> Tableau</li>
-            <li><b>Databases:</b> Postgres, MySQL, BigQuery, and Snowflake</li>
-            <li><b>Web Scraping:</b> BeautifulSoup and Selenium</li>
-            <li><b>Machine Learning:</b> scikit-learn and TensorFlow</li>
-            <li><b>Version Control:</b> Git and GitHub</li>
-            <li><b>Cloud Services:</b> AWS and GCP</li>
-          </ul>
-          
-        </p>
-        
-        <p>
-          Seeking an opportunity to grow into a Data Engineer, where I can build scalable and reliable data infrastructure.
-        </p>
+          <aside class="about-highlights">
+            <div class="stat-card">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div><strong>3.93 / 4.00</strong><span>Bachelor GPA · Udayana University</span></div>
+            </div>
+            <div class="stat-card">
+              <i class="fa-solid fa-briefcase"></i>
+              <div><strong>2+ Years</strong><span>Professional experience in data</span></div>
+            </div>
+            <div class="stat-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <div><strong>Bali, Indonesia</strong><span>Based in Denpasar</span></div>
+            </div>
+          </aside>
+        </div>
       </div>
     </section>
 
 
     <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
+    <section id="experience" class="section section-alt">
       <div class="container">
-
-        <!-- Latest Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title teal-text">M MART</span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Data Engineer</div>
-            <ul>
-              <li>
-                Migrated legacy Python scripts triggered via a local Windows Task Scheduler to a fully orchestrated Apache Airflow deployment on an on-premises infrastructure, replacing a single point of failure with observable, retryable production pipelines.
-              </li>
-              <li>
-                Introduced dbt to the stack to establish data lineage, a searchable data catalog, and reusable macros for modeling multiple analytical grains and modeled the analytics mart as a star schema.
-              </li>
-              <li>
-                Diagnosed a shared-resource bottleneck between Airflow and the PostgreSQL data warehouse running on the same server. Provisioned and horizontally scaled onto a second on-prem node, distributing the scheduler, DAG processor, and an additional Celery worker across two nodes via Docker Compose.
-              </li>
-              <li>
-                Migrated the company's BI layer from Power BI to Metabase, enabling self-serve querying and data export capabilities the team previously lacked.
-              </li>
-              <li>
-                Redesigned data flows from batch ETL to ELT with Change Data Capture (CDC), improving pipeline governance and data freshness across ingestion from Oracle (retail ERP), SQL Server (warehouse management), MySQL (e-commerce), and a loyalty platform into a unified ~200-table warehouse.
-              </li>
-              <li>
-                Built a layered data quality framework combining dbt schema tests for structural integrity, SLA based freshness and completeness checks on raw ingestion, and reconciliation tests that validate derived metrics such as net revenue against source data using formulas like net unit retail times quantity sold minus discount amount.
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>Dec 2025 - Present | Bali</span>
-          </div>
+        <div class="section-head">
+          <span class="eyebrow">02 · Experience</span>
+          <h2 class="section-title">Work Experience</h2>
         </div>
 
-        <!-- Previous Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <!-- <div class="col s12 m2">
-                <a href="https://www.monsieurblonde.com/" target="_blank"><img alt="Monsieur Blonde logo"
-                    src="/assets/img/exp-zhiffy-logo-1.webp" class="responsive-img center-block" /></a>
-              </div> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.monsieurblonde.com/" target="_blank"
-                      class="teal-text hoverline">Monsieur Blonde</a></span>
-                </p>
+        <div class="timeline">
+          <!-- Latest Experience -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><i class="fa-solid fa-building-columns"></i></div>
+            <div class="card experience-card">
+              <div class="exp-head">
+                <div>
+                  <h3 class="exp-company">M MART</h3>
+                  <p class="exp-role">Data Engineer</p>
+                </div>
+                <span class="badge-period"><i class="fa-regular fa-calendar"></i> Dec 2025 – Present</span>
               </div>
+              <p class="exp-location"><i class="fa-solid fa-location-dot"></i> Bali, Indonesia</p>
+              <ul class="exp-list">
+                <li>
+                  Migrated legacy Python scripts triggered via a local Windows Task Scheduler to a fully orchestrated Apache Airflow deployment on an on-premises infrastructure, replacing a single point of failure with observable, retryable production pipelines.
+                </li>
+                <li>
+                  Introduced dbt to the stack to establish data lineage, a searchable data catalog, and reusable macros for modeling multiple analytical grains and modeled the analytics mart as a star schema.
+                </li>
+                <li>
+                  Diagnosed a shared-resource bottleneck between Airflow and the PostgreSQL data warehouse running on the same server. Provisioned and horizontally scaled onto a second on-prem node, distributing the scheduler, DAG processor, and an additional Celery worker across two nodes via Docker Compose.
+                </li>
+                <li>
+                  Migrated the company's BI layer from Power BI to Metabase, enabling self-serve querying and data export capabilities the team previously lacked.
+                </li>
+                <li>
+                  Redesigned data flows from batch ETL to ELT with Change Data Capture (CDC), improving pipeline governance and data freshness across ingestion from Oracle (retail ERP), SQL Server (warehouse management), MySQL (e-commerce), and a loyalty platform into a unified ~200-table warehouse.
+                </li>
+                <li>
+                  Built a layered data quality framework combining dbt schema tests for structural integrity, SLA based freshness and completeness checks on raw ingestion, and reconciliation tests that validate derived metrics such as net revenue against source data using formulas like net unit retail times quantity sold minus discount amount.
+                </li>
+              </ul>
             </div>
-            <div class="role brown-text text-darken-2">Data Engineer & Analytics</div>
-            <ul>
-              <li>
-                Built an ETL pipeline in Python to automate inventory synchronization between the Point of Sale system and Shopify
-                by scraping the POS, cleansing and transforming the data, and loading it via Shopify's GraphQL API, reducing stock
-                update time by 80% and saving over 4 hours per week. Orchestrated the entire process using Apache Airflow for scheduling
-                and monitoring.
-              </li>
-              <li>
-                Developed an end-to-end ETL pipeline to process SPG (Sales Promotion Girl) performance data by automating data extraction
-                from the POS system using requests and BeautifulSoup, transforming the data with pandas and numpy, and exporting it into
-                Excel reports using openpyxl. Reduced manual data entry by 90%, saving over 2 hours per week.
-              </li>
-              <li>
-                Automated the data cleaning and processing phase of the monthly website reporting process using Python, reducing processing
-                time by over 65%, saving 16 hours per month. Utilized pandas for data wrangling and aggregation, and matplotlib for visualizing
-                key metrics.
-              </li>
-              <li>
-                Built a Kafka-based scheduled Telegram notification system that buffers Shopify order data and automatically notifies the team
-                each weekday at 9 a.m., eliminating 20 minutes of daily manual work and saving ~1.7 hours per week.
-              </li>
-              <li>Built interactive dashboards using Excel to present key insights and enhance decision-making for management.</li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>May 2024 - Nov 2025 | Bali</span>
-          </div>
-        </div>
+          </article>
 
+          <!-- Previous Experience -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="card experience-card">
+              <div class="exp-head">
+                <div>
+                  <h3 class="exp-company"><a href="https://www.monsieurblonde.com/" target="_blank" rel="noopener" class="company-link">Monsieur Blonde <i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
+                  <p class="exp-role">Data Engineer &amp; Analytics</p>
+                </div>
+                <span class="badge-period"><i class="fa-regular fa-calendar"></i> May 2024 – Nov 2025</span>
+              </div>
+              <p class="exp-location"><i class="fa-solid fa-location-dot"></i> Bali, Indonesia</p>
+              <ul class="exp-list">
+                <li>
+                  Built an ETL pipeline in Python to automate inventory synchronization between the Point of Sale system and Shopify
+                  by scraping the POS, cleansing and transforming the data, and loading it via Shopify's GraphQL API, reducing stock
+                  update time by 80% and saving over 4 hours per week. Orchestrated the entire process using Apache Airflow for scheduling
+                  and monitoring.
+                </li>
+                <li>
+                  Developed an end-to-end ETL pipeline to process SPG (Sales Promotion Girl) performance data by automating data extraction
+                  from the POS system using requests and BeautifulSoup, transforming the data with pandas and numpy, and exporting it into
+                  Excel reports using openpyxl. Reduced manual data entry by 90%, saving over 2 hours per week.
+                </li>
+                <li>
+                  Automated the data cleaning and processing phase of the monthly website reporting process using Python, reducing processing
+                  time by over 65%, saving 16 hours per month. Utilized pandas for data wrangling and aggregation, and matplotlib for visualizing
+                  key metrics.
+                </li>
+                <li>
+                  Built a Kafka-based scheduled Telegram notification system that buffers Shopify order data and automatically notifies the team
+                  each weekday at 9 a.m., eliminating 20 minutes of daily manual work and saving ~1.7 hours per week.
+                </li>
+                <li>Built interactive dashboards using Excel to present key insights and enhance decision-making for management.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
+    <section id="projects" class="section">
       <div class="container">
-        <div class="row">
+        <div class="section-head">
+          <span class="eyebrow">03 · Projects</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
 
+        <div class="projects-grid">
           <!-- DBT Project -->
-          <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="dbt project" src="/assets/img/dbt-project.png" style="height: 100%; width: 100%" class="activator" />
+          <article class="card project-card reveal">
+            <div class="project-media">
+              <img alt="The Look eCommerce data modelling project" src="/assets/img/dbt-project.png" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">The Look eCommerce Data Modelling</h3>
+              <p class="project-desc">
+                A data modelling project utilizing Amazon S3 to store raw data, Snowflake as a data warehouse, and dbt for data modelling.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Amazon S3</span>
+                <span class="chip">Snowflake</span>
+                <span class="chip">dbt</span>
               </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">The Look eCommerce Data Modelling<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A data modelling project utilizing Amazon S3 to store raw data, Snowflake as a data warehouse, and dbt for data modelling
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+              <details class="project-details">
+                <summary>Accomplishments</summary>
                 <ul>
-                  <li><b>Tools:</b> Amazon S3, Snowflake, dbt</li>
                   <li>Stores raw datasets in Amazon S3.</li>
                   <li>Snowflake acts as the cloud data warehouse.</li>
                   <li>dbt used for stages and cleans raw data from Snowflake.</li>
                   <li>The final data model is designed in a star schema for efficient analytics.</li>
                 </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for this project" href="https://github.com/qarisp/thelook-data-modelling-project"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
+              </details>
+              <div class="project-links">
+                <a aria-label="Visit the GitHub repo for this project" href="https://github.com/qarisp/thelook-data-modelling-project" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Source</a>
               </div>
             </div>
-          </div>
-          
+          </article>
+
           <!-- Kafka Project -->
-          <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="kafka project" src="/assets/img/kafka-project-logo.png" style="height: 100%; width: 100%" class="activator" />
+          <article class="card project-card reveal">
+            <div class="project-media">
+              <img alt="Indonesia Weather and Earthquake Map project" src="/assets/img/kafka-project-logo.png" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Indonesia Weather &amp; Earthquake Map</h3>
+              <p class="project-desc">
+                A Kafka-based streaming project that ingests weather and earthquake data from BMKG and OpenWeather API.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Kafka</span>
+                <span class="chip">AWS</span>
+                <span class="chip">NoSQL</span>
+                <span class="chip">Streamlit</span>
               </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Indonesia Weather & Earthquake Map<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A Kafka-based streaming project that ingests weather and earthquake data from BMKG and OpenWeather API
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+              <details class="project-details">
+                <summary>Accomplishments</summary>
                 <ul>
-                  <li><b>Tools:</b> Kafka, AWS, NoSQL</li>
                   <li>Data is ingested and streamed using Kafka.</li>
                   <li>A Kafka consumer sends alerts via Telegram when new earthquake events occur.</li>
                   <li>Weather and earthquake data are stored in DynamoDB (NoSQL).</li>
                   <li>The data is visualized with Streamlit, fetching real-time updates from DynamoDB.</li>
                 </ul>
-                <div class="card-action">
-                  <a aria-label="Visit this app" href="https://weather-earthquake-kafka-portfolio.streamlit.app/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for this project" href="https://github.com/qarisp/weather-earthquake-kafka-project"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
+              </details>
+              <div class="project-links">
+                <a aria-label="Visit this app" href="https://weather-earthquake-kafka-portfolio.streamlit.app/" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live App</a>
+                <a aria-label="Visit the GitHub repo for this project" href="https://github.com/qarisp/weather-earthquake-kafka-project" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Source</a>
               </div>
             </div>
-          </div>
+          </article>
 
           <!-- Rain in Australia Project -->
-          <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="rain in australia project" src="/assets/img/rain-in-australia.jpg" style="height: 100%; width: 100%" class="activator" />
+          <article class="card project-card reveal">
+            <div class="project-media">
+              <img alt="Rain in Australia prediction project" src="/assets/img/rain-in-australia.jpg" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Rain in Australia Prediction</h3>
+              <p class="project-desc">
+                A machine learning project using XGBoost to predict next-day rain with a recall score of 0.87.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Pandas</span>
+                <span class="chip">NumPy</span>
+                <span class="chip">scikit-learn</span>
+                <span class="chip">Plotly</span>
               </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Rain in Australia Prediction<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A machine learning project using XGBoost
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+              <details class="project-details">
+                <summary>Accomplishments</summary>
                 <ul>
-                  <li><b>Tools:</b> Pandas, Numpy, SciPy, Plotly, and scikit-learn.</li>
-                  <li>Evaluated XGBoost, Random Forest, Logistic Regression, and Decision Tree</li>
+                  <li>Evaluated XGBoost, Random Forest, Logistic Regression, and Decision Tree.</li>
                   <li>Focus on Recall score as the primary evaluation metric to accurately identify days when rain would occur.</li>
                   <li><b>Recall score:</b> 0.87</li>
                 </ul>
-                <div class="card-action">
-                  <a aria-label="Visit this app" href="https://rain-prediction-portfolio.streamlit.app/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for this project" href="https://github.com/qarisp/rain_prediction"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
+              </details>
+              <div class="project-links">
+                <a aria-label="Visit this app" href="https://rain-prediction-portfolio.streamlit.app/" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live App</a>
+                <a aria-label="Visit the GitHub repo for this project" href="https://github.com/qarisp/rain_prediction" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Source</a>
               </div>
             </div>
-          </div>
-          
-          <!-- The Look Project -->
-          <div class="col s12 m8 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="the look analysis project" src="/assets/img/the-look-ecommerce.png" style="height: 100%; width: 100%" class="activator" />
+          </article>
+
+          <!-- The Look Analysis Project -->
+          <article class="card project-card reveal">
+            <div class="project-media">
+              <img alt="The Look eCommerce analysis project" src="/assets/img/the-look-ecommerce.png" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">The Look eCommerce Analysis</h3>
+              <p class="project-desc">
+                Utilized BigQuery to analyze The Look eCommerce data and surface actionable business insights.
+              </p>
+              <div class="chip-row">
+                <span class="chip">BigQuery</span>
+                <span class="chip">SQL</span>
+                <span class="chip">GCP</span>
               </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">The Look eCommerce Analysis<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Utilized BigQuery to analyze The Look eCommerce data
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+              <details class="project-details">
+                <summary>Accomplishments</summary>
                 <ul>
-                  <li><b>Tools:</b> BigQuery</li>
                   <li>Identifying trends in sales, customer behavior, customer demographic, fulfillment time, return/cancellation rate, and marketing channels.</li>
                   <li>Provided actionable insights to improve fulfillment time, reduce return and cancellation rate, and optimize marketing platforms to increase net sales.</li>
-
                 </ul>
-                <div class="card-action">
-                  <a aria-label="Visit this dashboard" href="https://drive.google.com/file/d/1vCo4HT5XuLwyFAw_FjFi_k790wHFjfwQ/view" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                </div>
+              </details>
+              <div class="project-links">
+                <a aria-label="Visit this dashboard" href="https://drive.google.com/file/d/1vCo4HT5XuLwyFAw_FjFi_k790wHFjfwQ/view" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Dashboard</a>
               </div>
             </div>
-          </div>
+          </article>
 
           <!-- The Look Dashboard Project -->
-          <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="the look dashboard" src="/assets/img/the-look-dashboard.png"
-                style="height: 100%; width: 100%" class="activator" />
+          <article class="card project-card reveal">
+            <div class="project-media">
+              <img alt="The Look eCommerce Tableau dashboard" src="/assets/img/the-look-dashboard.png" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">The Look eCommerce Dashboard</h3>
+              <p class="project-desc">
+                Dashboard for The Look eCommerce using Tableau with dynamic filtering and drill-down analysis.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Tableau</span>
+                <span class="chip">Dashboards</span>
               </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">The Look eCommerce Dashboard<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Dashboard for The Look eCommerce using Tableau
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+              <details class="project-details">
+                <summary>Accomplishments</summary>
                 <ul>
-                  <li><b>Tools:</b> Tableau</li>
                   <li>Visualized key business metrics such as revenue, top product category, customer demographic, and order fulfillment.</li>
                   <li>Enabled dynamic filtering and drill-down analysis with parameters and calculated fields, allowing stakeholders to gain actionable insights.</li>
-
-
                 </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://public.tableau.com/app/profile/qaris.pratama8706/viz/TheLook_17422002785660/SalesPerformanceDashboard2" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                </div>
+              </details>
+              <div class="project-links">
+                <a aria-label="Visit this dashboard on Tableau Public" href="https://public.tableau.com/app/profile/qaris.pratama8706/viz/TheLook_17422002785660/SalesPerformanceDashboard2" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Dashboard</a>
               </div>
             </div>
-          </div>
-
-          <!-- ************* -->
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Fifth Section: Skills -->
-    <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
+    <section id="skills" class="section section-alt">
       <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">04 · Skills</span>
+          <h2 class="section-title">Tech Stack</h2>
+        </div>
 
-        <!-- Languages and Databases -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Languages and Databases</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/python-logo-1-300x300.jpg" class="responsive-img" />Python
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/shell-logo-1-300x300.jpg" class="responsive-img" />Shell Scripting
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/postgresql-logo.png" class="responsive-img" />PostgreSQL
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/bigquery.png" class="responsive-img" />BigQuery
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/snowflake.png" class="responsive-img" />Snowflake
-              </div>
+        <div class="skills-grid">
+          <div class="card skill-group reveal">
+            <h3 class="skill-title"><i class="fa-solid fa-database"></i> Languages &amp; Databases</h3>
+            <div class="skill-chips">
+              <span class="skill-chip"><img src="/assets/img/python-logo-1-300x300.jpg" alt="" loading="lazy" />Python</span>
+              <span class="skill-chip"><img src="/assets/img/shell-logo-1-300x300.jpg" alt="" loading="lazy" />Shell Scripting</span>
+              <span class="skill-chip"><img src="/assets/img/mysql-logo-1-300x300.jpg" alt="" loading="lazy" />MySQL</span>
+              <span class="skill-chip"><img src="/assets/img/postgresql-logo.png" alt="" loading="lazy" />PostgreSQL</span>
+              <span class="skill-chip"><img src="/assets/img/bigquery.png" alt="" loading="lazy" />BigQuery</span>
+              <span class="skill-chip"><img src="/assets/img/snowflake.png" alt="" loading="lazy" />Snowflake</span>
+            </div>
+          </div>
+
+          <div class="card skill-group reveal">
+            <h3 class="skill-title"><i class="fa-solid fa-gears"></i> Data Tools</h3>
+            <div class="skill-chips">
+              <span class="skill-chip"><img src="/assets/img/airflow.png" alt="" loading="lazy" />Airflow</span>
+              <span class="skill-chip"><img src="/assets/img/dbt.jpg" alt="" loading="lazy" />dbt</span>
+              <span class="skill-chip"><img src="/assets/img/apache-spark-2.png" alt="" loading="lazy" />Apache Spark</span>
+              <span class="skill-chip"><img src="/assets/img/apache-kafka.png" alt="" loading="lazy" />Apache Kafka</span>
+              <span class="skill-chip"><img src="/assets/img/docker-2.png" alt="" loading="lazy" />Docker</span>
+              <span class="skill-chip"><img src="/assets/img/kubernetes.png" alt="" loading="lazy" />Kubernetes</span>
+            </div>
+          </div>
+
+          <div class="card skill-group reveal">
+            <h3 class="skill-title"><i class="fa-solid fa-plug"></i> API Technologies</h3>
+            <div class="skill-chips">
+              <span class="skill-chip"><img src="/assets/img/graphql.png" alt="" loading="lazy" />GraphQL</span>
+              <span class="skill-chip"><img src="/assets/img/rest-api.png" alt="" loading="lazy" />REST</span>
+            </div>
+          </div>
+
+          <div class="card skill-group reveal">
+            <h3 class="skill-title"><i class="fa-solid fa-chart-pie"></i> Data Visualization</h3>
+            <div class="skill-chips">
+              <span class="skill-chip"><img src="/assets/img/tableau.png" alt="" loading="lazy" />Tableau</span>
+              <span class="skill-chip"><img src="/assets/img/matplotlib-logo-1-500x500.jpg" alt="" loading="lazy" />Matplotlib</span>
+            </div>
+          </div>
+
+          <div class="card skill-group reveal">
+            <h3 class="skill-title"><i class="fa-solid fa-brain"></i> Machine Learning</h3>
+            <div class="skill-chips">
+              <span class="skill-chip"><img src="/assets/img/scikit-learn.png" alt="" loading="lazy" />scikit-learn</span>
+              <span class="skill-chip"><img src="/assets/img/tensorflow-logo-1.png" alt="" loading="lazy" />TensorFlow</span>
+            </div>
+          </div>
+
+          <div class="card skill-group reveal">
+            <h3 class="skill-title"><i class="fa-solid fa-cloud"></i> Cloud Services</h3>
+            <div class="skill-chips">
+              <span class="skill-chip"><img src="/assets/img/aws.png" alt="" loading="lazy" />AWS</span>
+              <span class="skill-chip"><img src="/assets/img/gcp-logo.png" alt="" loading="lazy" />GCP</span>
+            </div>
+          </div>
+
+          <div class="card skill-group reveal">
+            <h3 class="skill-title"><i class="fa-solid fa-code-branch"></i> Version Control</h3>
+            <div class="skill-chips">
+              <span class="skill-chip"><img src="/assets/img/git.png" alt="" loading="lazy" />Git</span>
+              <span class="skill-chip"><img src="/assets/img/github.png" alt="" loading="lazy" />GitHub</span>
             </div>
           </div>
         </div>
-
-        <!-- Data Tools -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Data Tools</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/airflow.png" class="responsive-img" />Airflow
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/dbt.jpg" class="responsive-img" />dbt
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/apache-spark-2.png" class="responsive-img" />Apache Spark
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/apache-kafka.png" class="responsive-img" />Apache Kafka
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/docker-2.png" class="responsive-img" />Docker
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/kubernetes.png" class="responsive-img" />Kubernetes
-              </div>
-              <!-- <div class="col s4 m2">
-                <img alt="" src="/assets/img/graphql.png" class="responsive-img" />GraphQL
-              </div> -->
-            </div>
-          </div>
-        </div>
-
-        <!-- API Technologies -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">API Technologies</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/graphql.png" class="responsive-img" />GraphQL
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/rest-api.png" class="responsive-img" />REST
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Data Visualization -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Data Visualization</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tableau.png" class="responsive-img" />Tableau
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/matplotlib-logo-1-500x500.jpg" class="responsive-img" />Matplotlib
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Machine learning -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Machine Learning</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/scikit-learn.png" class="responsive-img" />scikit-learn
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tensorflow-logo-1.png" class="responsive-img" />TensorFlow
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Cloud Services -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Cloud Services</h4>
-            <div class="row text-center">
-
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/aws.png" class="responsive-img" />AWS
-              </div>
-
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/gcp-logo.png" class="responsive-img" />GCP
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Version Control</h4>
-            <div class="row text-center">
-
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/git.png" class="responsive-img" />Git
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/github.png" class="responsive-img" />GitHub
-              </div>
-
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
 
     <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
+    <section id="education" class="section">
       <div class="container">
-        <div class="row">
+        <div class="section-head">
+          <span class="eyebrow">05 · Education</span>
+          <h2 class="section-title">Education</h2>
+        </div>
 
-          <!-- Education -->
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.unud.ac.id/" target="_blank" class="teal-text hoverline">Udayana University</a></span>
-                </p>
-                <p class="brown-text">Badung, Bali</p>
-                <p>
-                  <b>Degree: </b>Bachelor of Computer Science
-                  <br>
-                  <b>GPA: </b>3.93/4.00
-                </p>
+        <div class="education-grid">
+          <div class="card edu-card reveal">
+            <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="edu-body">
+              <h3 class="edu-school"><a href="https://www.unud.ac.id/" target="_blank" rel="noopener" class="company-link">Udayana University <i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
+              <p class="edu-meta"><i class="fa-solid fa-location-dot"></i> Badung, Bali</p>
 
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Statistics and Probability</li>
-                    <li>Database Systems</li>
-                    <li>Data Management</li>
-                    <li>Business Intelligence</li>
-                    <li>Artificial Intelligence</li>
-                    <li>Data Science</li>
-                    <li>Operating Systems</li>
-                    <li>Data Mining</li>
-                  </ul>
-                  </p>
+              <div class="edu-facts">
+                <div class="fact"><span>Degree</span><strong>Bachelor of Computer Science</strong></div>
+                <div class="fact"><span>GPA</span><strong>3.93 / 4.00</strong></div>
+              </div>
 
-                </ul>
+              <h4 class="coursework-title">Relevant Courseworks</h4>
+              <div class="chip-row">
+                <span class="chip">Statistics &amp; Probability</span>
+                <span class="chip">Database Systems</span>
+                <span class="chip">Data Management</span>
+                <span class="chip">Business Intelligence</span>
+                <span class="chip">Artificial Intelligence</span>
+                <span class="chip">Data Science</span>
+                <span class="chip">Operating Systems</span>
+                <span class="chip">Data Mining</span>
               </div>
             </div>
           </div>
@@ -729,234 +553,178 @@
     </section>
 
     <!-- Eighth Section: Courses -->
-    <section id="courses" class="section scrollspy">
-      <h3 class="page-title white-text teal">Courses</h3>
+    <section id="courses" class="section section-alt">
       <div class="container">
-        <div class="row">
+        <div class="section-head">
+          <span class="eyebrow">06 · Courses</span>
+          <h2 class="section-title">Certifications &amp; Courses</h2>
+        </div>
 
+        <div class="courses-grid">
           <!-- Professional Data Engineer in Python -->
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://drive.google.com/file/d/1A1xb7rvpmQro84C_TYIJh4pHJ0qzKqXt/view?usp=sharing" target="_blank" class="teal-text hoverline">Professional Data Engineer in Python</a></span>
-                </p>
-                <p class="brown-text">DataCamp</p>
-                <ul>
-                  <p>
-                    <b>Completed: </b>May 2025
-                    <br>
-                    <b>Covered:</b>
-                    <ul>
-                      <li>Data Build Tool (DBT)</li>
-                      <li>Docker</li>
-                      <li>Apache Spark</li>
-                      <li>Apache Kafka</li>
-                      <li>Kubernetes</li>
-                    </ul>
-                  </p>
-
-                </ul>
-              </div>
+          <article class="card course-card reveal">
+            <div class="course-top">
+              <span class="badge-provider">DataCamp</span>
+              <span class="badge-period"><i class="fa-regular fa-calendar"></i> May 2025</span>
             </div>
-          </div>
-          
+            <h3 class="course-title"><a href="https://drive.google.com/file/d/1A1xb7rvpmQro84C_TYIJh4pHJ0qzKqXt/view?usp=sharing" target="_blank" rel="noopener">Professional Data Engineer in Python</a></h3>
+            <ul class="course-list">
+              <li>Data Build Tool (DBT)</li>
+              <li>Docker</li>
+              <li>Apache Spark</li>
+              <li>Apache Kafka</li>
+              <li>Kubernetes</li>
+            </ul>
+            <a class="course-link" href="https://drive.google.com/file/d/1A1xb7rvpmQro84C_TYIJh4pHJ0qzKqXt/view?usp=sharing" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
           <!-- Data Engineer in Python -->
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://drive.google.com/file/d/1TxdehXuhPuUQPLdCWVmFTvjE3_6wCcsB/view" target="_blank" class="teal-text hoverline">Data Engineer in Python</a></span>
-                </p>
-                <p class="brown-text">DataCamp</p>
-                <ul>
-                  <p>
-                    <b>Completed: </b>May 2025
-                    <br>
-                    <b>Covered:</b>
-                    <ul>
-                      <li>ETL/ELT</li>
-                      <li>Data Ingestion</li>
-                      <li>Data Cleaning</li>
-                      <li>Apache Airflow</li>
-                      <li>Cloud Computing</li>
-                    </ul>
-                  </p>
-
-                </ul>
-              </div>
+          <article class="card course-card reveal">
+            <div class="course-top">
+              <span class="badge-provider">DataCamp</span>
+              <span class="badge-period"><i class="fa-regular fa-calendar"></i> May 2025</span>
             </div>
-          </div>
+            <h3 class="course-title"><a href="https://drive.google.com/file/d/1TxdehXuhPuUQPLdCWVmFTvjE3_6wCcsB/view" target="_blank" rel="noopener">Data Engineer in Python</a></h3>
+            <ul class="course-list">
+              <li>ETL/ELT</li>
+              <li>Data Ingestion</li>
+              <li>Data Cleaning</li>
+              <li>Apache Airflow</li>
+              <li>Cloud Computing</li>
+            </ul>
+            <a class="course-link" href="https://drive.google.com/file/d/1TxdehXuhPuUQPLdCWVmFTvjE3_6wCcsB/view" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
 
           <!-- AWS Cloud Practitioner -->
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://drive.google.com/file/d/1DEFCaaml2uRjSj62ODvtmz86p4JOqM-N/view?usp=sharing" target="_blank" class="teal-text hoverline">AWS Cloud Practitioner</a></span>
-                </p>
-                <p class="brown-text">DataCamp</p>
-                <ul>
-                  <p>
-                    <b>Completed: </b>May 2025
-                    <br>
-                    <b>Covered:</b>
-                    <ul>
-                      <li>Cloud Computing</li>
-                      <li>AWS Concept</li>
-                      <li>AWS Cloud Technology and Services</li>
-                      <li>AWS Security</li>
-                      <li>Cost Management</li>
-                    </ul>
-                  </p>
-
-                </ul>
-              </div>
+          <article class="card course-card reveal">
+            <div class="course-top">
+              <span class="badge-provider">DataCamp</span>
+              <span class="badge-period"><i class="fa-regular fa-calendar"></i> May 2025</span>
             </div>
-          </div>
+            <h3 class="course-title"><a href="https://drive.google.com/file/d/1DEFCaaml2uRjSj62ODvtmz86p4JOqM-N/view?usp=sharing" target="_blank" rel="noopener">AWS Cloud Practitioner</a></h3>
+            <ul class="course-list">
+              <li>Cloud Computing</li>
+              <li>AWS Concept</li>
+              <li>AWS Cloud Technology and Services</li>
+              <li>AWS Security</li>
+              <li>Cost Management</li>
+            </ul>
+            <a class="course-link" href="https://drive.google.com/file/d/1DEFCaaml2uRjSj62ODvtmz86p4JOqM-N/view?usp=sharing" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
 
           <!-- Associate Data Analyst in SQL -->
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://drive.google.com/file/d/1wcN44lxkHDTn0dkVSn1kwZZ4K5iyvYXX/view" target="_blank" class="teal-text hoverline">Associate Data Analyst in SQL</a></span>
-                </p>
-                <p class="brown-text">DataCamp</p>
-                <ul>
-                  <p>
-                    <b>Completed: </b>March 2025
-                    <br>
-                    <b>Covered:</b>
-                    <ul>
-                      <li>PostgresSQL</li>
-                      <li>Joining Data</li>
-                      <li>Manipulating Data</li>
-                      <li>Summary Statistics & Window Functions</li>
-                      <li>Exploratory Data Analysis</li>
-                    </ul>
-                  </p>
-
-                </ul>
-              </div>
+          <article class="card course-card reveal">
+            <div class="course-top">
+              <span class="badge-provider">DataCamp</span>
+              <span class="badge-period"><i class="fa-regular fa-calendar"></i> Mar 2025</span>
             </div>
-          </div>
+            <h3 class="course-title"><a href="https://drive.google.com/file/d/1wcN44lxkHDTn0dkVSn1kwZZ4K5iyvYXX/view" target="_blank" rel="noopener">Associate Data Analyst in SQL</a></h3>
+            <ul class="course-list">
+              <li>PostgresSQL</li>
+              <li>Joining Data</li>
+              <li>Manipulating Data</li>
+              <li>Summary Statistics &amp; Window Functions</li>
+              <li>Exploratory Data Analysis</li>
+            </ul>
+            <a class="course-link" href="https://drive.google.com/file/d/1wcN44lxkHDTn0dkVSn1kwZZ4K5iyvYXX/view" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
 
           <!-- Data Analyst in Tableau -->
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://drive.google.com/file/d/15bkU_E7q06o7387ZwHg6vNZmO8jP-YW6/view" target="_blank" class="teal-text hoverline">Data Analyst in Tableau</a></span>
-                </p>
-                <p class="brown-text">DataCamp</p>
-                <ul>
-                  <p>
-                    <b>Completed: </b>February 2025
-                    <br>
-                    <b>Covered:</b>
-                    <ul>
-                      <li>Connecting Data</li>
-                      <li>Calculated Fields</li>
-                      <li>Statistical Techniques</li>
-                      <li>Parameters</li>
-                      <li>Creating Dashboards</li>
-                    </ul>
-                  </p>
-
-                </ul>
-              </div>
+          <article class="card course-card reveal">
+            <div class="course-top">
+              <span class="badge-provider">DataCamp</span>
+              <span class="badge-period"><i class="fa-regular fa-calendar"></i> Feb 2025</span>
             </div>
-          </div>
+            <h3 class="course-title"><a href="https://drive.google.com/file/d/15bkU_E7q06o7387ZwHg6vNZmO8jP-YW6/view" target="_blank" rel="noopener">Data Analyst in Tableau</a></h3>
+            <ul class="course-list">
+              <li>Connecting Data</li>
+              <li>Calculated Fields</li>
+              <li>Statistical Techniques</li>
+              <li>Parameters</li>
+              <li>Creating Dashboards</li>
+            </ul>
+            <a class="course-link" href="https://drive.google.com/file/d/15bkU_E7q06o7387ZwHg6vNZmO8jP-YW6/view" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
 
           <!-- Introduction to Python for Data Science -->
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://drive.google.com/file/d/1ocNNxrorq5Fa2Z4mf-YtQfMN_KasMgpr/view" target="_blank" class="teal-text hoverline">Introduction to Python for Data Science</a></span>
-                </p>
-                <p class="brown-text">Hactiv8</p>
-                <ul>
-                  <p>
-                    <b>Completed: </b>December 2022
-                    <br>
-                    <b>Covered:</b>
-                    <ul>
-                      <li>Basic Python</li>
-                      <li>Python for Statistics</li>
-                      <li>Pandas and NumPy</li>
-                      <li>Machine Learning Concept</li>
-                      <li>scikit-learn</li>
-                    </ul>
-                  </p>
-
-                </ul>
-              </div>
+          <article class="card course-card reveal">
+            <div class="course-top">
+              <span class="badge-provider">Hactiv8</span>
+              <span class="badge-period"><i class="fa-regular fa-calendar"></i> Dec 2022</span>
             </div>
-          </div>
-
+            <h3 class="course-title"><a href="https://drive.google.com/file/d/1ocNNxrorq5Fa2Z4mf-YtQfMN_KasMgpr/view" target="_blank" rel="noopener">Introduction to Python for Data Science</a></h3>
+            <ul class="course-list">
+              <li>Basic Python</li>
+              <li>Python for Statistics</li>
+              <li>Pandas and NumPy</li>
+              <li>Machine Learning Concept</li>
+              <li>scikit-learn</li>
+            </ul>
+            <a class="course-link" href="https://drive.google.com/file/d/1ocNNxrorq5Fa2Z4mf-YtQfMN_KasMgpr/view" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Ninth Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
+    <section id="contact" class="section contact-section">
       <div class="container">
-        <p>
-          <a aria-label="Email Qaris" href="mailto:qarisp@gmail.com" target="_blank" data-position="top"
-            data-tooltip="Email Qaris" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Qaris" href="mailto:qarisp@gmail.com"
-              class="hoverline">qarisp@gmail.com</a></a>
-        </p>
-        <p>
-          <a aria-label="View Qaris on GitHub" href="http://github.com/qarisp" target="_blank"
-            data-position="top" data-tooltip="View Qaris on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Qaris on Github" href="http://github.com/qarisp" class="hoverline"
-              target="_blank">github.com/qarisp</a></a>
-        </p>
-        <p>
-          <a aria-label="View Qaris on LinkedIn" href="https://www.linkedin.com/in/qaris-pratama-640960207/" target="_blank"
-            data-position="top" data-tooltip="View Qaris on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="Qaris on LinkedIn" href="https://www.linkedin.com/in/qaris-pratama-640960207/"
-              class="hoverline" target="_blank">linkedin.com/in/qaris-pratama</a></a>
-        </p>
+        <div class="section-head">
+          <span class="eyebrow">07 · Contact</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-sub">Have an opportunity or just want to say hi? My inbox is always open.</p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="card contact-card reveal" href="mailto:qarisp@gmail.com">
+            <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+            <span class="contact-info">
+              <strong>Email</strong>
+              <span>qarisp@gmail.com</span>
+            </span>
+          </a>
+
+          <a class="card contact-card reveal" href="https://github.com/qarisp" target="_blank" rel="noopener">
+            <span class="contact-icon"><i class="fa-brands fa-github"></i></span>
+            <span class="contact-info">
+              <strong>GitHub</strong>
+              <span>github.com/qarisp</span>
+            </span>
+          </a>
+
+          <a class="card contact-card reveal" href="https://www.linkedin.com/in/qaris-pratama-640960207/" target="_blank" rel="noopener">
+            <span class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+            <span class="contact-info">
+              <strong>LinkedIn</strong>
+              <span>linkedin.com/in/qaris-pratama</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="contact-cta">
+          <a class="btn btn-primary" href="https://drive.google.com/file/d/1tnnmnTBeWvgCJB79UE7ssqJMI92OO5tC/view?usp=sharing" target="_blank" rel="noopener">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Qaris Pratama · Data Engineer</p>
+      <p class="footer-note">Built with <i class="fa-solid fa-heart"></i> in Bali, Indonesia</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
   <!-- typed.js -->
   <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Pythonist", "Fast Learner", "Data Driven Problem Solver"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-  </script>
-
-
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
-  </script>
+  <!-- Main scripts -->
+  <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
