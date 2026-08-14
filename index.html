@@ -267,6 +267,43 @@
         <div class="card">
           <div class="card-content">
             <div class="row">
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title teal-text">M MART</span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Data Engineer</div>
+            <ul>
+              <li>
+                Migrated legacy Python scripts triggered via a local Windows Task Scheduler to a fully orchestrated Apache Airflow deployment on an on-premises infrastructure, replacing a single point of failure with observable, retryable production pipelines.
+              </li>
+              <li>
+                Introduced dbt to the stack to establish data lineage, a searchable data catalog, and reusable macros for modeling multiple analytical grains and modeled the analytics mart as a star schema.
+              </li>
+              <li>
+                Diagnosed a shared-resource bottleneck between Airflow and the PostgreSQL data warehouse running on the same server. Provisioned and horizontally scaled onto a second on-prem node, distributing the scheduler, DAG processor, and an additional Celery worker across two nodes via Docker Compose.
+              </li>
+              <li>
+                Migrated the company's BI layer from Power BI to Metabase, enabling self-serve querying and data export capabilities the team previously lacked.
+              </li>
+              <li>
+                Redesigned data flows from batch ETL to ELT with Change Data Capture (CDC), improving pipeline governance and data freshness across ingestion from Oracle (retail ERP), SQL Server (warehouse management), MySQL (e-commerce), and a loyalty platform into a unified ~200-table warehouse.
+              </li>
+              <li>
+                Built a layered data quality framework combining dbt schema tests for structural integrity, SLA based freshness and completeness checks on raw ingestion, and reconciliation tests that validate derived metrics such as net revenue against source data using formulas like net unit retail times quantity sold minus discount amount.
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Dec 2025 - Present | Bali</span>
+          </div>
+        </div>
+
+        <!-- Previous Experience -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
               <!-- <div class="col s12 m2">
                 <a href="https://www.monsieurblonde.com/" target="_blank"><img alt="Monsieur Blonde logo"
                     src="/assets/img/exp-zhiffy-logo-1.webp" class="responsive-img center-block" /></a>
@@ -304,7 +341,7 @@
             </ul>
           </div>
           <div class="card-action">
-            <span>May 2024 - Present | Denpasar, Bali</span>
+            <span>May 2024 - Nov 2025 | Bali</span>
           </div>
         </div>
 
