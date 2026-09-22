@@ -87,7 +87,7 @@
           <li><a class="nav-link" href="#courses">Courses</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
           <li class="nav-cta">
-            <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/1tnnmnTBeWvgCJB79UE7ssqJMI92OO5tC/view?usp=sharing" target="_blank" rel="noopener">
+            <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/1Y-I2Iv9PxaBuqsrMo4gXe4hwo-dG1ch8/view?usp=sharing" target="_blank" rel="noopener">
               <i class="fa-solid fa-file-arrow-down"></i> Resume
             </a>
           </li>
@@ -217,7 +217,7 @@
               <p class="exp-location"><i class="fa-solid fa-location-dot"></i> Bali, Indonesia</p>
               <ul class="exp-list">
                 <li>
-                  Migrated legacy Python scripts triggered via a local Windows Task Scheduler to a fully orchestrated Apache Airflow deployment on an on-premises infrastructure, replacing a single point of failure with observable, retryable production pipelines.
+                  Migrated legacy Python scripts triggered via a local Windows Task Scheduler to a fully orchestrated Apache Airflow deployment on an on-premises infrastructure, replacing a single point of failure with observable, retryable production pipelines that maintain a ≥99% DAG success rate.
                 </li>
                 <li>
                   Introduced dbt to the stack to establish data lineage, a searchable data catalog, and reusable macros for modeling multiple analytical grains and modeled the analytics mart as a star schema.
@@ -226,13 +226,16 @@
                   Diagnosed a shared-resource bottleneck between Airflow and the PostgreSQL data warehouse running on the same server. Provisioned and horizontally scaled onto a second on-prem node, distributing the scheduler, DAG processor, and an additional Celery worker across two nodes via Docker Compose.
                 </li>
                 <li>
-                  Migrated the company's BI layer from Power BI to Metabase, enabling self-serve querying and data export capabilities the team previously lacked.
+                  Diagnosed a recurring business pain point where regional stakeholders needed self-serve access to exportable, tabular reports scoped to their own region, a capability Power BI's report model didn't support well, and introduced Metabase to the BI stack to provide row-level, multi-account reporting access without requiring per-user Power BI licenses.
                 </li>
                 <li>
                   Redesigned data flows from batch ETL to ELT with Change Data Capture (CDC), improving pipeline governance and data freshness across ingestion from Oracle (retail ERP), SQL Server (warehouse management), MySQL (e-commerce), and a loyalty platform into a unified ~200-table warehouse.
                 </li>
                 <li>
                   Built a layered data quality framework combining dbt schema tests for structural integrity, SLA based freshness and completeness checks on raw ingestion, and reconciliation tests that validate derived metrics such as net revenue against source data using formulas like net unit retail times quantity sold minus discount amount.
+                </li>
+                <li>
+                  Set up a self-hosted GitLab CI/CD pipeline to automate deployment of Airflow DAGs and dbt models on push, replacing manual file transfers to production with a shell-executor runner and version-controlled deployments.
                 </li>
               </ul>
             </div>
@@ -702,7 +705,7 @@
         </div>
 
         <div class="contact-cta">
-          <a class="btn btn-primary" href="https://drive.google.com/file/d/1tnnmnTBeWvgCJB79UE7ssqJMI92OO5tC/view?usp=sharing" target="_blank" rel="noopener">
+          <a class="btn btn-primary" href="https://drive.google.com/file/d/1Y-I2Iv9PxaBuqsrMo4gXe4hwo-dG1ch8/view?usp=sharing" target="_blank" rel="noopener">
             <i class="fa-solid fa-file-arrow-down"></i> Download Resume
           </a>
         </div>
