@@ -147,6 +147,16 @@ h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.2; }
 }
 .site-header.scrolled { border-bottom-color: var(--border); box-shadow: var(--shadow-sm); }
 
+.scroll-progress {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: 0;
+  background: var(--gradient);
+  transition: width 0.1s linear;
+}
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -760,6 +770,22 @@ h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.2; }
 .footer-inner p { color: var(--muted); font-size: 0.88rem; }
 .footer-note i { color: var(--accent); }
 
+.footer-social { display: flex; gap: 10px; }
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.9rem;
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.footer-social a:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
+
 /* ---------- Back to top ---------- */
 .back-to-top {
   position: fixed;
@@ -848,7 +874,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.2; }
   .timeline-marker { width: 44px; height: 44px; font-size: 0.95rem; }
   .courses-grid { grid-template-columns: 1fr; }
   .edu-card { flex-direction: column; }
-  .footer-inner { flex-direction: column; text-align: center; }
+  .footer-inner { flex-direction: column; align-items: center; text-align: center; gap: 14px; }
   .float-chip { font-size: 0.75rem; padding: 7px 12px; }
   .hero { padding-top: 110px; }
 }

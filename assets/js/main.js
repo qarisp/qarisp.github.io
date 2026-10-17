@@ -51,10 +51,16 @@
 (function () {
   var header = document.getElementById("site-header");
   var toTop = document.getElementById("back-to-top");
+  var progress = document.getElementById("scroll-progress");
 
   function onScroll() {
     if (header) header.classList.toggle("scrolled", window.scrollY > 10);
     if (toTop) toTop.classList.toggle("show", window.scrollY > 600);
+    if (progress) {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      var ratio = max > 0 ? window.scrollY / max : 0;
+      progress.style.width = (ratio * 100).toFixed(2) + "%";
+    }
   }
 
   window.addEventListener("scroll", onScroll, { passive: true });
@@ -83,10 +89,13 @@
       if (sec.offsetTop <= pos) current = sec;
     });
     links.forEach(function (link) {
-      link.classList.toggle(
-        "active",
-        current && link.getAttribute("href") === "#" + current.id
-      );
+      var isActive = current && link.getAttribute("href") === "#" + current.id;
+      link.classList.toggle("active", isActive);
+      if (isActive) {
+        link.setAttribute("aria-current", "true");
+      } else {
+        link.removeAttribute("aria-current");
+      }
     });
   }
 
@@ -121,7 +130,7 @@
   var el = document.querySelector(".typing");
   if (!el || typeof Typed === "undefined") return;
   new Typed(".typing", {
-    strings: ["Pythonist", "Fast Learner", "Data Driven Problem Solver"],
+    strings: ["Data Engineer", "Pipeline Builder", "Analytics Engineer", "Automation Enthusiast"],
     loop: true,
     typeSpeed: 70,
     backSpeed: 35,

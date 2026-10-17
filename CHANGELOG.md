@@ -5,6 +5,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- JSON-LD `Person` structured data, canonical URL, Twitter Card tags, and
+  `theme-color` meta tags for richer search and social sharing.
+- Reading-progress bar in the header and `aria-current` on the active
+  scrollspy nav link.
+- Social links in the footer and apple-touch-icon / manifest favicon links.
+
+### Changed
+
+- Rewrote the About and hero copy to reflect current seniority (2+ years,
+  working Data Engineer) and tightened wording throughout.
+- Updated the hero typing animation to role-focused phrases
+  (Data Engineer · Pipeline Builder · Analytics Engineer · Automation
+  Enthusiast).
+- Fixed broken `og:image` (pointed to a missing `examples/preview.JPG`).
+- Corrected "Relevant Courseworks" to "Relevant Coursework".
+
+### Removed
+
+- `assets/css/style.css` — dead legacy stylesheet (not referenced by the
+  current `index.html`).
+
 ## [2.0.0] - 2026-08-15
 
 ### Changed

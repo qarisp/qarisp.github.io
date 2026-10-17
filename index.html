@@ -15,7 +15,10 @@
   <!-- End Google Tag Manager -->
 
   <title>Qaris Pratama | Data Engineer</title>
-  <meta name="description" content="Portfolio of Qaris Pratama, Data Engineer" />
+  <meta name="description" content="Portfolio of Qaris Pratama, a data engineer based in Bali, Indonesia, building scalable data pipelines, warehouses, and analytics infrastructure with Python, Airflow, dbt, Spark, and cloud platforms." />
+  <link rel="canonical" href="https://qarisp.github.io/" />
+  <meta name="theme-color" content="#0d9488" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
 
   <!-- Theme bootstrap (prevents flash of the wrong theme) -->
   <script>
@@ -28,6 +31,8 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
+  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -50,15 +55,52 @@
 
   <!-- Open Graph-->
   <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="profile" />
   <meta property="og:title" content="Qaris Pratama | Data Engineer" />
-  <meta property="og:description" content="Data Engineer" />
+  <meta property="og:description" content="Data engineer building scalable pipelines, warehouses, and analytics infrastructure. Python, Airflow, dbt, Spark, Kafka, AWS, and GCP." />
   <meta property="og:url" content="https://qarisp.github.io/" />
   <meta property="og:site_name" content="Qaris Pratama | Data Engineer" />
   <meta property="article:publisher" content="https://qarisp.github.io/" />
-  <meta property="og:image" content="https://qarisp.github.io/examples/preview.JPG" />
+  <meta property="og:image" content="https://qarisp.github.io/assets/img/linkedin-profile.jpeg" />
+  <!-- Twitter Card-->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Qaris Pratama | Data Engineer" />
+  <meta name="twitter:description" content="Data engineer building scalable pipelines, warehouses, and analytics infrastructure." />
+  <meta name="twitter:image" content="https://qarisp.github.io/assets/img/linkedin-profile.jpeg" />
   <!-- Google Site Verification for indexing -->
   <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
+
+  <!-- Structured data (schema.org Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Qaris Pratama",
+    "jobTitle": "Data Engineer",
+    "url": "https://qarisp.github.io/",
+    "email": "mailto:qarisp@gmail.com",
+    "image": "https://qarisp.github.io/assets/img/linkedin-profile.jpeg",
+    "sameAs": [
+      "https://www.linkedin.com/in/qaris-pratama-640960207/",
+      "https://github.com/qarisp"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Denpasar",
+      "addressRegion": "Bali",
+      "addressCountry": "ID"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Udayana University"
+    },
+    "knowsAbout": [
+      "Data Engineering", "Data Pipelines", "Apache Airflow", "dbt",
+      "Apache Spark", "Apache Kafka", "Python", "SQL", "Snowflake",
+      "BigQuery", "AWS", "Google Cloud Platform", "Data Modeling"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -105,6 +147,7 @@
         </button>
       </div>
     </div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
   </header>
 
   <main id="main">
@@ -116,12 +159,13 @@
         <div class="hero-text">
           <p class="hero-eyebrow"><span class="pulse-dot"></span> Data Engineer · Bali, Indonesia</p>
           <h1 class="hero-title">Hi, I'm <span class="gradient-text">Qaris Pratama.</span></h1>
-          <p class="hero-typed">A <span class="typing"></span></p>
+          <p class="hero-typed"><span class="typing"></span></p>
           <p class="hero-desc">
-            Self-driven and quick to learn, I'm a passionate data engineer with a curious mindset, focused on solving complex, real-world problems by building scalable data pipelines and efficient data infrastructure.
+            I design and build scalable data pipelines, warehouses, and analytics
+            infrastructure that turn raw data into dependable business decisions.
           </p>
           <div class="hero-actions">
-            <a href="#about" class="btn btn-primary">Read More <i class="fa-solid fa-arrow-down"></i></a>
+            <a href="#about" class="btn btn-primary">About Me <i class="fa-solid fa-arrow-down"></i></a>
             <a href="#contact" class="btn btn-outline">Contact Me</a>
           </div>
           <div class="hero-social">
@@ -153,13 +197,17 @@
         <div class="about-grid">
           <div class="about-copy">
             <p>
-              I'm a Computer Science Graduate from Udayana University. I enjoy solving problems with code. Always strive to bring 100% to the work I do.
+              I'm a Data Engineer and Computer Science graduate from Udayana University with a 3.93 GPA, based in Denpasar, Bali.
+              I specialize in building and operating production-grade data platforms — from ingestion and orchestration to modeling and analytics.
             </p>
             <p>
-              I have worked on technologies like Python, Django, Flask, MySQL, PostgreSQL, Jupyter Notebook, scikit-learn, and TensorFlow during my bachelor's. I have over 1 year of professional work experience which helped me strengthen my experience in Python, SQL, building pipeline, and automating task.
+              Over the past 2+ years, I've migrated fragile scripted ETL to orchestrated, observable pipelines with Apache Airflow,
+              introduced dbt-powered data modeling and quality frameworks, and delivered automation that consistently saved teams
+              dozens of hours of manual work per month.
             </p>
             <p>
-              I am passionate about building scalable data pipelines and efficient data infrastructure, and I'm seeking an opportunity to grow into a Data Engineer, where I can build scalable and reliable data infrastructure.
+              I care about reliability, data lineage, and infrastructure that scales with the business — and I'm always adding
+              the right tool to the stack when the problem calls for it.
             </p>
 
             <ul class="check-list">
@@ -538,7 +586,7 @@
                 <div class="fact"><span>GPA</span><strong>3.93 / 4.00</strong></div>
               </div>
 
-              <h4 class="coursework-title">Relevant Courseworks</h4>
+              <h4 class="coursework-title">Relevant Coursework</h4>
               <div class="chip-row">
                 <span class="chip">Statistics &amp; Probability</span>
                 <span class="chip">Database Systems</span>
@@ -717,6 +765,11 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© 2026 Qaris Pratama · Data Engineer</p>
+      <div class="footer-social">
+        <a aria-label="Visit Qaris' LinkedIn profile" href="https://www.linkedin.com/in/qaris-pratama-640960207/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a aria-label="Visit Qaris' GitHub profile" href="https://github.com/qarisp" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a aria-label="Email Qaris" href="mailto:qarisp@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
       <p class="footer-note">Built with <i class="fa-solid fa-heart"></i> in Bali, Indonesia</p>
     </div>
   </footer>
